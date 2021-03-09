@@ -3,7 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
- <title>Quiz</title>
+
 <style>
 
 
@@ -11,13 +11,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <title>Quiz</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
  </head>
 
 <body  >
-  <div id="index" class="container" style="text-align: center;" >
+  <div id="timer" style="display: none;">14:59</div>
+  <div id="index" class="container" style="text-align: center; " >
   <div class="jumbotron">
     <img src="/quiz.png" /><h1 class="display-4"  style="margin-right: 7%;" >Welcome to HTML, CSS Quiz & JS</h1>
     <p class="lead"><b>Hello there please provide us your name and read instrictions</b></p>
@@ -36,9 +37,9 @@
   
   </ul>
 
-    <br><br><br>
+    <br><br>
     <p class="lead">
-      <a id="b1" class="btn btn-primary btn-lg" onclick="func();" type="button">Start the quiz</a>
+      <a id="b1" class="btn btn-primary btn-lg" onclick="func(); time();" type="button" ">Start the quiz</a>
     </p>
   </div>
   
@@ -46,7 +47,7 @@
 </div>
 <div id="q-1" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-1 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -79,7 +80,7 @@
 <!----------------------------------------------------------------->
 <div id="q-2" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-2 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -112,7 +113,7 @@
 <!----------------------------------------------------------------->
 <div id="q-3" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-3 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -145,7 +146,7 @@
 <!----------------------------------------------------------------->
 <div id="q-4" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-4 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -178,7 +179,7 @@
 <!----------------------------------------------------------------->
 <div id="q-5" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-5 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -211,7 +212,7 @@
 <!----------------------------------------------------------------->
 <div id="q-6" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-6 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -244,7 +245,7 @@
 <!----------------------------------------------------------------->
 <div id="q-7" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-7 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -277,7 +278,7 @@
 <!----------------------------------------------------------------->
 <div id="q-8" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-8 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -310,7 +311,7 @@
 <!----------------------------------------------------------------->
 <div id="q-9" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-9 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -343,7 +344,7 @@
 <!----------------------------------------------------------------->
 <div id="q-10" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">Question-10 will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -365,7 +366,7 @@
         <li class="page-item "><a class="page-link"  onclick="go(event,8);">8</a></li>
         <li class="page-item "><a class="page-link"  onclick="go(event,9);">9</a></li>
         <li class="page-item active"><a class="page-link"  >10</a></li>
-        <li class="page-item active"><a class="page-link"  onclick="next(event);">submit</a></li>
+        <li class="page-item active"><a class="page-link"  onclick="next(event);time();">final submit</a></li>
       </ul>
     </nav>
     </footer>
@@ -376,12 +377,12 @@
 
 <div id="result" class="container" style="display:none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
+    <h1 class="display-4">result will come here</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
     <hr class="my-4">
     <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
     <p class="lead">
-    <a id="b2" class="btn btn-primary btn-lg" onclick="start();"  role="button">Start again ?</a>
+    <a id="b2" class="btn btn-primary btn-lg" onclick="start();"   role="button">Start again ?</a>
     </p>
   </div>
 </div>
