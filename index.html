@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>sa</title>
+<style>
+
+
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Starter</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+<body  >
+  <div id="index" class="container" style="text-align: center;" >
+  <div class="jumbotron">
+    <img src="/quiz.png" /><h1 class="display-4"  style="margin-right: 7%;" >Welcome to HTML, CSS Quiz & JS</h1>
+    <p class="lead"><b>Hello there please provide us your name and read instrictions</b></p>
+    <hr class="my-4">
+    <p ><b>INSTRUCTIONS</b></p>
+    <ul style="width: 70%;
+    margin: auto; font-size: larger;">
+      <li>read the questions care fully, even if its easy</li>
+      <li>select any one of the options provided below the question</li>
+      <li>after selections click on submit buttion to record your submmition</li>
+      <li>you can come back to any question if you think you want to change the answer</li>
+    <li>Once clicked on start botton below a timer will start and will run for 10 minutes</li>
+  <li>Above instruction implies, you have 1 min for each question.</li>
+  <li>If you did'nt complete all questions in time you will be presented with your result which only consists of the atempted questions</li>
+  <li>At the 10th question click on submit and afrer click on show my result</li>  
+  
+  </ul>
+
+    <br><br><br>
+    <p class="lead">
+      <a id="b1" class="btn btn-primary btn-lg" onclick="func();" type="button">Start the quiz</a>
+    </p>
+  </div>
+  
+  
+</div>
+<div id="q-1" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item disabled"><a class="page-link"  onclick="prev(event)">Previous</a></li>
+        <li class="page-item active"><a class="page-link"  onclick="">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item  disabled"><a class="page-link" onclick="go(event,2);">2</a></li>
+        <li class="page-item  disabled"><a class="page-link"  onclick="go(event,3);">3</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,4);">4</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,5);">5</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
+
+        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
+      </ul>
+    </nav>
+    </footer>
+  
+</div>
+
+<!----------------------------------------------------------------->
+<div id="q-2" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item  active"><a class="page-link" onclick="">2</a></li>
+        <li class="page-item  disabled"><a class="page-link"  onclick="go(event,3);">3</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,4);">4</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,5);">5</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
+
+        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
+      </ul>
+    </nav>
+    </footer>
+  
+</div>
+
+<!----------------------------------------------------------------->
+<div id="q-3" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"  role="button"  onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item "><a class="page-link" onclick="go(event,2);">2</a></li>
+        <li class="page-item  active"><a class="page-link">3</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,4);">4</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,5);">5</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
+
+        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
+      </ul>
+    </nav>
+    </footer>
+  
+</div>
+
+<!----------------------------------------------------------------->
+<div id="q-4" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
+        <li class="page-item"><a class="page-link"  onclick="go(event,3);">3</a></li>
+        <li class="page-item active"><a class="page-link"  onclick="">4</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,5);">5</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
+
+        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
+      </ul>
+    </nav>
+    </footer>
+  
+</div>
+
+<!----------------------------------------------------------------->
+<div id="q-5" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,3);">3</a></li>
+        <li class="page-item"><a class="page-link"  onclick="go(event,4);">4</a></li>
+        <li class="page-item active"><a class="page-link" >5</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
+
+        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
+      </ul>
+    </nav>
+    </footer>
+  
+</div>
+
+<!----------------------------------------------------------------->
+<div id="q-6" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link"   onclick="prev(event);">Previous</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,3);">3</a></li>
+        <li class="page-item"><a class="page-link"  onclick="go(event,4);">4</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
+        <li class="page-item active"><a class="page-link">6</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
+
+        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
+      </ul>
+    </nav>
+    </footer>
+  
+</div>
+
+<!----------------------------------------------------------------->
+<div id="q-7" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item "><a class="page-link" onclick="go(event,2);">2</a></li>
+        <li class="page-item  "><a class="page-link"  onclick="go(event,3);">3</a></li>
+        <li class="page-item"><a class="page-link"  onclick="go(event,4);">4</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
+        <li class="page-item"><a class="page-link"  onclick="go(event,6);">6</a></li>
+        <li class="page-item active"><a class="page-link" >7</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
+
+        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
+      </ul>
+    </nav>
+    </footer>
+  
+</div>
+
+<!----------------------------------------------------------------->
+<div id="q-8" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
+        <li class="page-item"><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
+        <li class="page-item  "><a class="page-link"  onclick="go(event,3);">3</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,4);">4</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,6);">6</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,7);">7</a></li>
+        <li class="page-item active"><a class="page-link" >8</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
+
+        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
+      </ul>
+    </nav>
+    </footer>
+  
+</div>
+
+<!----------------------------------------------------------------->
+<div id="q-9" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
+        <li class="page-item"><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,3);">3</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,4);">4</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,6);">6</a></li>
+        <li class="page-item"><a class="page-link"  onclick="go(event,7);">7</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,8);">8</a></li>
+        <li class="page-item active"><a class="page-link"  >9</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
+
+        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
+      </ul>
+    </nav>
+    </footer>
+  
+</div>
+
+<!----------------------------------------------------------------->
+<div id="q-10" class="container" style="display: none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);">Submit</a>
+    </p>
+  </div>
+  <footer   >
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,3);">3</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,4);">4</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
+        <li class="page-item"><a class="page-link"  onclick="go(event,6);">6</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,7);">7</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,8);">8</a></li>
+        <li class="page-item "><a class="page-link"  onclick="go(event,9);">9</a></li>
+        <li class="page-item active"><a class="page-link"  >10</a></li>
+        <li class="page-item active"><a class="page-link"  onclick="next(event);">submit</a></li>
+      </ul>
+    </nav>
+    </footer>
+    
+</div>
+
+<!----------------------------------------------------------------->
+
+<div id="result" class="container" style="display:none;" >
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+    <a id="b2" class="btn btn-primary btn-lg" onclick="start();"  role="button">Start again ?</a>
+    </p>
+  </div>
+</div>
+
+<!----------------------------------------------------------------->
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script> 
+</body>
+
+
+</html>
