@@ -1,6 +1,6 @@
 # https://invincible-horn-snowshoe.glitch.me
 
-![](/ss.png)
+![](/ss.PNG)
 
 # For Local run;-
 - You will need to have Node installed to start this environment. If you are not sure if you have Node installed run `node -v` in your terminal. If you do not see a version number output, install Node before moving on.
