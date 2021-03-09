@@ -1,7 +1,8 @@
 footer{
-    margin-top: 38%;
+    margin-top: 22%;
     float: right;
     height: 90px;
+    cursor: pointer;
 }
 #b2{
     background-color: #00917c;
@@ -14,10 +15,29 @@ footer{
     background-color: #4a47a3;
     color: honeydew;
 }
-#b1:hover{
-    background-color: #5754c0;
-    
-}
+#b1 {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  #b1:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #616ee4 1%) center/15000%;
+  }
+ 
+  
+  /* Button style */
+  button {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+  }
+  
 #index > .jumbotron >ul > li{
     padding-bottom: 1%;
 }
@@ -26,4 +46,17 @@ img{
     float: left;
   
     margin-left: 1%;
+}
+
+#timer{
+    background-color: black;
+    
+    width:7.4%;
+    color: cornsilk;
+    position: fixed;
+    margin-left: 86.5%;
+    margin-right: 5.5%;
+    margin-top: 1%;
+    font-size:x-large;
+    text-align: center;
 }
