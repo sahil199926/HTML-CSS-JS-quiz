@@ -18,10 +18,10 @@
 
 <body  >
 
-  <div id="timer" style="display: none;background-color: #282828;">14:59</div>
+  <div id="timer" style="display:none">10:00</div>
   <div id="index"  class="container" style="text-align: center; " >
   <div class="jumbotron">
-    <img src="/quiz.png" /><h1 class="display-4"  style="margin-right: 7%;" >Welcome to HTML, CSS Quiz & JS</h1>
+    <img src="/quiz.png" /><h1 class="display-4"  style="margin-right: 7%;" >Welcome to HTML, CSS & JS Quiz </h1>
     <p class="lead" ><b>Hello there please provide us your name and read instrictions</b></p>
     <hr class="my-4">
     <p ><b>INSTRUCTIONS</b></p>
@@ -29,12 +29,9 @@
     margin: auto; font-size: larger;">
 
       <li>select any one of the options provided below the question</li>
-      <li>after selections click on submit buttion to record your submmition</li>
+      <li>after selecting your option click on submit buttion to record your submittion</li>
       <li>you can come back to any question if you think you want to change the answer</li>
     <li>Once clicked on start botton,a timer will start and will run for 10 minutes</li>
-  <li>Above instruction implies, you have 1 min for each question.</li>
-  <li>If you did'nt complete all questions in time you will be presented with your result which only consists of the atempted questions</li>
-  <li>At the 10th question click on submit and afrer click on show my result</li>  
   
   </ul>
 
@@ -64,29 +61,10 @@
         </form>
     <p class="lead">
 
-      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event); fo(event);tick(event);">Submit</a>
     </p>
   </div>
-  <footer   >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item disabled"><a class="page-link"  onclick="prev(event)">Previous</a></li>
-        <li class="page-item active"><a class="page-link"  onclick="">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item  disabled"><a class="page-link" onclick="go(event,2);">2</a></li>
-        <li class="page-item  disabled"><a class="page-link"  onclick="go(event,3);">3</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,4);">4</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,5);">5</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
 
-        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
-      </ul>
-    </nav>
-    </footer>
-  
 </div>
 
 <!------>
@@ -107,29 +85,10 @@
         <label for="64"> none of the above</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event); ">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
     </p>
   </div>
-  <footer   >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item  active"><a class="page-link" onclick="">2</a></li>
-        <li class="page-item  disabled"><a class="page-link"  onclick="go(event,3);">3</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,4);">4</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,5);">5</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
 
-        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
-      </ul>
-    </nav>
-    </footer>
-  
 </div>
 
 <!------>
@@ -149,29 +108,9 @@
         <label for="74">Interpreter</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"  role="button"  onclick="sub(event); ">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"  role="button"  onclick="sub(event);tick(event); fo(event); ">Submit</a>
     </p>
   </div>
-  <footer   >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item "><a class="page-link" onclick="go(event,2);">2</a></li>
-        <li class="page-item  active"><a class="page-link">3</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,4);">4</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,5);">5</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
-
-        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
-      </ul>
-    </nav>
-    </footer>
-  
 </div>
 
 <!------>
@@ -195,28 +134,9 @@
         <label for="84">three level</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
     </p>
   </div>
-  <footer   >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
-        <li class="page-item"><a class="page-link"  onclick="go(event,3);">3</a></li>
-        <li class="page-item active"><a class="page-link"  onclick="">4</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,5);">5</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
-
-        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
-      </ul>
-    </nav>
-    </footer>
   
 </div>
 
@@ -241,28 +161,9 @@
         <label for="94">None of the above</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
     </p>
   </div>
-  <footer   >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,3);">3</a></li>
-        <li class="page-item"><a class="page-link"  onclick="go(event,4);">4</a></li>
-        <li class="page-item active"><a class="page-link" >5</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,6);">6</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
-
-        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
-      </ul>
-    </nav>
-    </footer>
   
 </div>
 
@@ -283,28 +184,10 @@
         <label for="104"> None Of The Above</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
     </p>
   </div>
-  <footer   >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link"   onclick="prev(event);">Previous</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,3);">3</a></li>
-        <li class="page-item"><a class="page-link"  onclick="go(event,4);">4</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
-        <li class="page-item active"><a class="page-link">6</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,7);">7</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
 
-        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
-      </ul>
-    </nav>
-    </footer>
   
 </div>
 
@@ -326,28 +209,10 @@
         <label for="114"> because JS can provide programming functionality inside but up to certain extend.</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
     </p>
   </div>
-  <footer   >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item "><a class="page-link" onclick="go(event,2);">2</a></li>
-        <li class="page-item  "><a class="page-link"  onclick="go(event,3);">3</a></li>
-        <li class="page-item"><a class="page-link"  onclick="go(event,4);">4</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
-        <li class="page-item"><a class="page-link"  onclick="go(event,6);">6</a></li>
-        <li class="page-item active"><a class="page-link" >7</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,8);">8</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
 
-        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
-      </ul>
-    </nav>
-    </footer>
   
 </div>
 
@@ -369,28 +234,10 @@
         <label for="124">None of the above</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
     </p>
   </div>
-  <footer   >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
-        <li class="page-item"><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
-        <li class="page-item  "><a class="page-link"  onclick="go(event,3);">3</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,4);">4</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,6);">6</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,7);">7</a></li>
-        <li class="page-item active"><a class="page-link" >8</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
 
-        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
-      </ul>
-    </nav>
-    </footer>
   
 </div>
 
@@ -412,28 +259,9 @@
         <label for="134">src</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
     </p>
   </div>
-  <footer   >
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
-        <li class="page-item"><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,3);">3</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,4);">4</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,6);">6</a></li>
-        <li class="page-item"><a class="page-link"  onclick="go(event,7);">7</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,8);">8</a></li>
-        <li class="page-item active"><a class="page-link"  >9</a></li>
-        <li class="page-item disabled"><a class="page-link"  onclick="go(event,10);">10</a></li>
-
-        <li class="page-item"><a class="page-link" onclick="next(event);">Next</a></li>
-      </ul>
-    </nav>
-    </footer>
   
 </div>
 
@@ -455,29 +283,32 @@
         </form>
       
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event); show(); ">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);tick(event); show(); ">Submit</a>
       <a class="btn btn-primary btn-lg" id="b3" role="button" style="display: none;"  onclick="sure();">final Submit</a>
     </p>
   </div>
-  <footer   >
+
+    
+</div>
+
+<div class="container">
+  <footer id="foot" style="display: none;">
     <nav aria-label="Page navigation example">
       <ul class="pagination">
-        <li class="page-item"><a class="page-link"  onclick="prev(event);">Previous</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,1);">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item  "><a class="page-link" onclick="go(event,2);">2</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,3);">3</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,4);">4</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,5);">5</a></li>
-        <li class="page-item"><a class="page-link"  onclick="go(event,6);">6</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,7);">7</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,8);">8</a></li>
-        <li class="page-item "><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item active"><a class="page-link">10</a></li>
+        <li class="page-item active"><a class="page-link"  onclick="go(1);">1<span class="sr-only">(current)</span></a></li>
+        <li class="page-item disabled"><a class="page-link" onclick="go(2);">2</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(3);">3</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(4);">4</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(5);">5</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(6);">6</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(7);">7</a></li>
+        <li class="page-item disabled"><a class="page-link"  onclick="go(8);">8</a></li>
+        <li class="page-item disabled "><a class="page-link"  onclick="go(9);">9</a></li>
+        <li class="page-item disabled "><a class="page-link" onclick="go(10);">10</a></li>
         
       </ul>
     </nav>
     </footer>
-    
 </div>
 <!----modal--->
 
@@ -491,7 +322,7 @@
         <p>You still got some time, you can re-visit and review you answers</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="sure('c');time();result();">Yes</button>
+        <button type="button" class="btn btn-primary" onclick="sure('b');time();result();">Yes</button>
         <button type="button" class="btn btn-secondary" onclick="sure('c');" data-dismiss="modal">No</button>
       </div>
     </div>
@@ -501,6 +332,7 @@
 <!-------------->
 
 <div id="result" class="container" style="display:none;" >
+  <button onclick="topFunction()" id="top" title="Go to top">Top</button>
   <div class="jumbotron">
     <h1 class="display-4" id="res"></h1>
     <hr class="my-4">
