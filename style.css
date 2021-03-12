@@ -1,16 +1,23 @@
 footer{
-    margin-top: 22%;
     float: right;
-    height: 90px;
     cursor: pointer;
+    
+   
+}
+#opt:hover{
+    background-color: brown;
+}
+#opt:visited{
+    color: chartreuse;
 }
 #b2{
     background-color: #00917c;
     color: honeydew;
 }
 #b2:hover{
-    background-color:  #43a193 ;
+    background-color:  #1b4d45 ;
 }
+
 #b1{
     background-color: #4a47a3;
     color: honeydew;
@@ -22,8 +29,20 @@ footer{
   #b1:hover {
     background: #47a7f5 radial-gradient(circle, transparent 1%, #616ee4 1%) center/15000%;
   }
+  #b3{
+      background-color: #ffc107;
+      color: white;
+      margin-left:4%;
+
+  }
+  #b3:hover{
+      background-color: #fbd04c;
+  }
  
-  
+ @media all and (max-width:480px){
+    
+    .pagination{display:grid;
+ }}
   /* Button style */
   button {
     border: none;
