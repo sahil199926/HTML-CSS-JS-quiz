@@ -17,20 +17,21 @@
  </head>
 
 <body  >
-  <div id="timer" style="display: none;">14:59</div>
-  <div id="index" class="container" style="text-align: center; " >
+
+  <div id="timer" style="display: none;background-color: #282828;">14:59</div>
+  <div id="index"  class="container" style="text-align: center; " >
   <div class="jumbotron">
     <img src="/quiz.png" /><h1 class="display-4"  style="margin-right: 7%;" >Welcome to HTML, CSS Quiz & JS</h1>
-    <p class="lead"><b>Hello there please provide us your name and read instrictions</b></p>
+    <p class="lead" ><b>Hello there please provide us your name and read instrictions</b></p>
     <hr class="my-4">
     <p ><b>INSTRUCTIONS</b></p>
     <ul style="width: 70%;
     margin: auto; font-size: larger;">
-      <li>read the questions care fully, even if its easy</li>
+
       <li>select any one of the options provided below the question</li>
       <li>after selections click on submit buttion to record your submmition</li>
       <li>you can come back to any question if you think you want to change the answer</li>
-    <li>Once clicked on start botton below a timer will start and will run for 10 minutes</li>
+    <li>Once clicked on start botton,a timer will start and will run for 10 minutes</li>
   <li>Above instruction implies, you have 1 min for each question.</li>
   <li>If you did'nt complete all questions in time you will be presented with your result which only consists of the atempted questions</li>
   <li>At the 10th question click on submit and afrer click on show my result</li>  
@@ -47,11 +48,22 @@
 </div>
 <div id="q-1" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-1 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 1: Which of the following is used to create Web Pages ?</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+      <form id="qu1" style="font-size: large;">
+        <input type="radio" id="51" name="q1" value="x"/>
+        <label for="51">C++</label><br>
+        <input type="radio" id="52" name="q1" value="x"/>
+        <label for="52">Java</label><br>
+        <input type="radio" id="53" name="q1" value="y"/>
+        <label for="53">HTML</label><br>
+        <input type="radio" id="54" name="q1" value="x"/>
+        <label for="54">JVM</label><br>
+        </form>
     <p class="lead">
+
       <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);">Submit</a>
     </p>
   </div>
@@ -77,15 +89,25 @@
   
 </div>
 
-<!----------------------------------------------------------------->
+<!------>
 <div id="q-2" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-2 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 2: HTML stands for</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+      <form id="qu2" style="font-size: large;">
+        <input type="radio" id="61" name="q2" value="x"/>
+        <label for="61" >Hyper Text Makeup Language</label><br>
+        <input type="radio" id="62" name="q2" value="y"/>
+        <label for="62" >Hyper Text Markup Language</label><br>
+        <input type="radio" id="63" name="q2" value="x"/>
+        <label for="63">Hyper Tech Markup Language</label><br>
+        <input type="radio" id="64" name="q2" value="x"/>
+        <label for="64"> none of the above</label><br>
+        </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event); ">Submit</a>
     </p>
   </div>
   <footer   >
@@ -110,15 +132,24 @@
   
 </div>
 
-<!----------------------------------------------------------------->
+<!------>
 <div id="q-3" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-3 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 3: HTML program can be read and rendered by</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <form id="qu3" style="font-size: large;">
+        <input type="radio" id="71" name="q3" value="x"/>
+        <label for="71" >Compiler</label><br>
+        <input type="radio" id="72" name="q3" value="x"/>
+        <label for="72" >Server</label><br>
+        <input type="radio" id="73" name="q3" value="y"/>
+        <label for="73"> Web Browser</label><br>
+        <input type="radio" id="74" name="q3" value="x"/>
+        <label for="74">Interpreter</label><br>
+        </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"  role="button"  onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"  role="button"  onclick="sub(event); ">Submit</a>
     </p>
   </div>
   <footer   >
@@ -143,15 +174,28 @@
   
 </div>
 
-<!----------------------------------------------------------------->
+<!------>
 <div id="q-4" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-4 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 4: How many types of levels in style sheets ?</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p id="p2" >
+      
+      
+      </p>
+      <form id="qu4" style="font-size: large;">
+        <input type="radio" id="81" name="q4" value="x"/>
+        <label for="81" >two level</label><br>
+        <input type="radio" id="82" name="q4" value="x"/>
+        <label for="82" >One level</label><br>
+        <input type="radio" id="83" name="q4" value="x"/>
+        <label for="83">four level</label><br>
+        <input type="radio" id="84" name="q4" value="y"/>
+        <label for="84">three level</label><br>
+        </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
     </p>
   </div>
   <footer   >
@@ -176,15 +220,28 @@
   
 </div>
 
-<!----------------------------------------------------------------->
+<!------>
 <div id="q-5" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-5 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 5: An external style sheet is ideal when the style is applied to</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p id="p2" >
+      
+      
+      </p>
+      <form id="qu5" style="font-size: large;">
+        <input type="radio" id="91" name="q5" value="y"/>
+        <label for="91" >many pages</label><br>
+        <input type="radio" id="92" name="q5" value="x"/>
+        <label for="92" >few pages</label><br>
+        <input type="radio" id="93" name="q5" value="x"/>
+        <label for="93">single pages</label><br>
+        <input type="radio" id="94" name="q5" value="x"/>
+        <label for="94">None of the above</label><br>
+        </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
     </p>
   </div>
   <footer   >
@@ -209,15 +266,24 @@
   
 </div>
 
-<!----------------------------------------------------------------->
+<!------>
 <div id="q-6" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-6 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 6: Which CSS Property is used for controlling the Layout?</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <form id="qu6" style="font-size: large;">
+        <input type="radio" id="101" name="q6" value="y"/>
+        <label for="101" >Display</label><br>
+        <input type="radio" id="102" name="q6" value="x"/>
+        <label for="102" >Header</label><br>
+        <input type="radio" id="103" name="q6" value="x"/>
+        <label for="103">Footer</label><br>
+        <input type="radio" id="104" name="q6" value="x"/>
+        <label for="104"> None Of The Above</label><br>
+        </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
     </p>
   </div>
   <footer   >
@@ -242,15 +308,25 @@
   
 </div>
 
-<!----------------------------------------------------------------->
+<!------>
 <div id="q-7" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-7 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 7: Why JavaScript is called as Lightweight Programming Language ?</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+      <form id="qu7" style="font-size: large;">
+        <input type="radio" id="111" name="q7" value="x"/>
+        <label for="111" >Browsers Compatibility</label><br>
+        <input type="radio" id="112" name="q7" value="x"/>
+        <label for="112" >because JS is client side scripting</label><br>
+        <input type="radio" id="113" name="q7" value="x"/>
+        <label for="113"> because we can add programming functionality inside JS</label><br>
+        <input type="radio" id="114" name="q7" value="y"/>
+        <label for="114"> because JS can provide programming functionality inside but up to certain extend.</label><br>
+        </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
     </p>
   </div>
   <footer   >
@@ -275,15 +351,25 @@
   
 </div>
 
-<!----------------------------------------------------------------->
+<!------>
 <div id="q-8" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-8 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 8: JavaScript is also called as</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+      <form id="qu8" style="font-size: large;">
+        <input type="radio" id="121" name="q8" value="x"/>
+        <label for="121" >Server Side Scripting Language</label><br>
+        <input type="radio" id="122" name="q8" value="y"/>
+        <label for="122" >Client Side Scripting Language</label><br>
+        <input type="radio" id="123" name="q8" value="x"/>
+        <label for="123"> All of the above</label><br>
+        <input type="radio" id="124" name="q8" value="x"/>
+        <label for="124">None of the above</label><br>
+        </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
     </p>
   </div>
   <footer   >
@@ -308,15 +394,25 @@
   
 </div>
 
-<!----------------------------------------------------------------->
+<!------>
 <div id="q-9" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-9 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 9: Which of the following Attribute is used to include External JS code inside your HTML Document ?</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+ 
+      <form id="qu9" style="font-size: large;">
+        <input type="radio" id="131" name="q9" value="x"/>
+        <label for="131" >link</label><br>
+        <input type="radio" id="132" name="q9" value="x"/>
+        <label for="132" >script</label><br>
+        <input type="radio" id="133" name="q9" value="x"/>
+        <label for="133">ext</label><br>
+        <input type="radio" id="134" name="q9" value="y"/>
+        <label for="134">src</label><br>
+        </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event); ">Submit</a>
     </p>
   </div>
   <footer   >
@@ -341,15 +437,26 @@
   
 </div>
 
-<!----------------------------------------------------------------->
+<!------>
 <div id="q-10" class="container" style="display: none;" >
   <div class="jumbotron">
-    <h1 class="display-4">Question-10 will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <h1 class="display-4">Que 10: Which was the first browser to support JavaScript ?</h1>
+    <p class="lead">Choose one</p>
     <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <form id="qu10" style="font-size: large;">
+        <input type="radio" id="141" name="q10" value="x"/>
+        <label for="141" >Google Chrome</label><br>
+        <input type="radio" id="142" name="q10" value="y"/>
+        <label for="142" >Netscape</label><br>
+        <input type="radio" id="143" name="q10" value="x"/>
+        <label for="143">Mozilla Firefox</label><br>
+        <input type="radio" id="144" name="q10" value="x"/>
+        <label for="144">IE</label><br>
+        </form>
+      
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);">Submit</a>
+      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event); ">Submit</a>
+      <a class="btn btn-primary btn-lg" id="b3" role="button"   onclick="sure();">final Submit</a>
     </p>
   </div>
   <footer   >
@@ -365,29 +472,122 @@
         <li class="page-item "><a class="page-link"  onclick="go(event,7);">7</a></li>
         <li class="page-item "><a class="page-link"  onclick="go(event,8);">8</a></li>
         <li class="page-item "><a class="page-link"  onclick="go(event,9);">9</a></li>
-        <li class="page-item active"><a class="page-link"  >10</a></li>
-        <li class="page-item active"><a class="page-link"  onclick="next(event);time();">final submit</a></li>
+        <li class="page-item active"><a class="page-link">10</a></li>
+        
       </ul>
     </nav>
     </footer>
     
 </div>
+<!----modal--->
 
-<!----------------------------------------------------------------->
-
-<div id="result" class="container" style="display:none;" >
-  <div class="jumbotron">
-    <h1 class="display-4">result will come here</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p id="p2" >It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <p class="lead">
-    <a id="b2" class="btn btn-primary btn-lg" onclick="start();"   role="button">Start again ?</a>
-    </p>
+<div class="modal" tabindex="-1" role="dialog" style="display: none;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sure want to submit</h5>
+      </div>
+      <div class="modal-body">
+        <p>You still got some time, you can re-visit and review you answers</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="sure('c');time();result();">Yes</button>
+        <button type="button" class="btn btn-secondary" onclick="sure('c');" data-dismiss="modal">No</button>
+      </div>
+    </div>
   </div>
 </div>
 
-<!----------------------------------------------------------------->
+<!-------------->
+
+<div id="result" class="container" style="display:none;" >
+  <div class="jumbotron">
+    <h1 class="display-4" id="res"></h1>
+    <hr class="my-4">
+    <div id="p2" style="display: flex;flex-direction: row;column-gap: 3%;margin-bottom: 2%;" ><div style="height: 30px; width: 30px; background-color:#c3e6cb ;"></div >Correct Answer<div style="height: 30px; width: 30px;border: 2px solid black;"></div>Your answer</div>
+    <p class="lead" >
+    <a id="b2" class="btn btn-primary btn-lg" onclick="start();"   role="button">Start again ?</a>
+    <a id="b2" class="btn btn-primary btn-lg" onclick=" answer();"  style="margin-left: 2%;    role="button">CLICK HERE TO SEE ANSWERS</a>  
+  </p>
+    <br>
+    <div id="sol"style="display:none;">
+    <h1>Que 1: Which of the following is used to create Web Pages ?</h1><br><br>
+    <ul id="a-1" class="list-group">
+     <li class="list-group-item list-group-item-dark">C++</li>
+     <li class="list-group-item list-group-item-dark">Java</li> 
+     <li class="list-group-item list-group-item-success">HTML</li>
+     <li class="list-group-item list-group-item-dark">JVM</li> 
+    </ul>
+    <br><br><br>
+    <h1>Que 2: HTML stands for</h1><br><br>
+    <ul id="a-2" class="list-group">
+     <li class="list-group-item list-group-item-dark">Hyper Text Makeup Language</li>
+     <li class="list-group-item list-group-item-success">Hyper Text Markup Language</li> 
+     <li class="list-group-item list-group-item-dark">Hyper Tech Markup Language</li>
+     <li class="list-group-item list-group-item-dark">none of the above</li> 
+    </ul><br><br><br>
+    <h1>Que 3: HTML program can be read and rendered by</h1><br><br>
+    <ul id="a-3" class="list-group">
+     <li class="list-group-item list-group-item-dark">Compiler</li>
+     <li class="list-group-item list-group-item-dark">Server</li> 
+     <li class="list-group-item list-group-item-success">Web Browser</li>
+     <li class="list-group-item list-group-item-dark">Interpreter</li> 
+    </ul><br><br><br>
+    <h1>Que 4: How many types of levels in style sheets ?</h1><br><br>
+    <ul id="a-4" class="list-group">
+     <li class="list-group-item list-group-item-dark">two level</li>
+     <li class="list-group-item list-group-item-dark">One level</li> 
+     <li class="list-group-item list-group-item-dark">four level</li>
+     <li class="list-group-item list-group-item-success">three level</li> 
+    </ul><br><br><br>
+    <h1>Que 5: An external style sheet is ideal when the style is applied to</h1><br><br>
+    <ul id="a-5" class="list-group">
+     <li class="list-group-item list-group-item-success">many pages</li>
+     <li class="list-group-item list-group-item-dark">few pages</li> 
+     <li class="list-group-item list-group-item-dark">single pages</li>
+     <li class="list-group-item list-group-item-dark">None of the above</li> 
+    </ul><br><br><br>
+    <h1>Que 6:Which CSS Property is used for controlling the Layout?</h1><br><br>
+    <ul id="a-6" class="list-group">
+     <li class="list-group-item list-group-item-success">Display</li>
+     <li class="list-group-item list-group-item-dark">Header</li> 
+     <li class="list-group-item list-group-item-dark"> Footer</li>
+     <li class="list-group-item list-group-item-dark">None Of The Above</li> 
+    </ul><br><br><br>
+    <h1>Que 7: Why JavaScript is called as Lightweight Programming Language ?</h1><br><br>
+    <ul id="a-7" class="list-group">
+     <li class="list-group-item list-group-item-dark">Browsers Compatibility</li>
+     <li class="list-group-item list-group-item-dark">because JS is client side scripting</li> 
+     <li class="list-group-item list-group-item-dark">because we can add programming functionality inside JS</li>
+     <li class="list-group-item list-group-item-success">because JS can provide programming functionality inside but up to certain extend.</li> 
+    </ul><br><br><br>
+    <h1>Que 8: JavaScript is also called as</h1><br><br>
+    <ul id="a-8" class="list-group">
+     <li class="list-group-item list-group-item-dark">erver Side Scripting Language</li>
+     <li class="list-group-item list-group-item-success">Client Side Scripting Language</li> 
+     <li class="list-group-item list-group-item-dark">All of the above</li>
+     <li class="list-group-item list-group-item-dark">None of the above</li> 
+    </ul><br><br><br>
+    <h1>Que 9: Which of the following Attribute is used to include External JS code inside your HTML Document ?</h1><br><br>
+    <ul id="a-9" class="list-group">
+     <li class="list-group-item list-group-item-dark">link</li>
+     <li class="list-group-item list-group-item-dark">script</li> 
+     <li class="list-group-item list-group-item-dark">ext</li>
+     <li class="list-group-item list-group-item-success">src</li> 
+    </ul><br><br><br>
+    <h1>Que 10: Which was the first browser to support JavaScript ?</h1><br><br>
+    <ul id="a-10" class="list-group">
+     <li class="list-group-item list-group-item-dark" >Google Chrome</li>
+     <li class="list-group-item list-group-item-success">Netscape</li> 
+     <li class="list-group-item list-group-item-dark">Mozilla Firefox</li>
+     <li class="list-group-item list-group-item-dark">IE</li> 
+    </ul>
+  </div>
+  </div>
+ 
+</div>
+
+<!------>
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
