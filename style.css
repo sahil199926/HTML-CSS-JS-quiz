@@ -32,7 +32,9 @@ footer{
   #b3{
       background-color: #ffc107;
       color: white;
-      margin-left:4%;
+      margin-top: 3%;
+      margin-left: 0%;
+
 
   }
   #b3:hover{
@@ -68,10 +70,12 @@ img{
 }
 
 #timer{
-    background-color: black;
+   
     
     width:7.4%;
-    color: cornsilk;
+    color: black;
+    text-shadow: black;
+
     position: fixed;
     margin-left: 86.5%;
     margin-right: 5.5%;
