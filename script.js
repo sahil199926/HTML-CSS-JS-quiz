@@ -162,6 +162,8 @@ var all_ul=document.getElementById('sol').querySelectorAll('ul');
     document.getElementById('sol').style.display='block';
 }
 
-
+function show(){
+    document.getElementById('b3').style.display='block';
+}
 
  
