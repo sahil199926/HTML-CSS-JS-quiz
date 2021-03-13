@@ -5,7 +5,7 @@ function func(){
  //foot
  document.getElementById('foot').style.display='block';
 }
-//go
+//go to question no.
 function go(a){
   
     var divs=document.getElementById('index');
@@ -29,7 +29,7 @@ function go(a){
         divs=divs.nextElementSibling;
     }
 }
-
+//move footer
 function fo(event){
 
     var b= event.target.parentElement.parentElement.parentElement;
@@ -43,8 +43,6 @@ function fo(event){
     f[temp].classList.add('active');
 }
 
-//footer to move quickly to  any visited page
-
 //start again
 function start(){
     document.getElementById('result').style.display='none';
@@ -53,27 +51,27 @@ function start(){
     location.reload();
    
 }
+//answer
 ans={'q1':0,'q2':0,'q3':0,'q4':0,'q5':0,'q6':0,'q7':0,'q8':0,'q9':0,'q10':0,};
+//solution
 solution={'q1':'0','q2':'0','q3':'0','q4':'0','q5':'0','q6':'0','q7':'0','q8':'0','q9':'0','q10':'0'};
-// for answer submition
-function sub(event){
-    var cal=event.target.parentElement.previousElementSibling;
-    
-    for(i=0;i<cal.childNodes.length;i++){
-        
-        if(cal.childNodes[i].checked&&cal.childNodes[i].value==='y')
-        { solution[cal.childNodes[i].name]=cal.childNodes[i].id; ans[cal.childNodes[i].name]=1;}
 
-        else if(cal.childNodes[i].checked){solution[cal.childNodes[i].name]=cal.childNodes[i].id;ans[cal.childNodes[i].name]=2;}
-       
+//enable button
+function enable(event){
+    if(event.target.value=='y'){
+        solution[event.target.name]=event.target.id; ans[event.target.name]=1;
     }
-
+    else if(event.target.value=='x'){
+        solution[event.target.name]=event.target.id; ans[event.target.name]=2;
+    }
+event.target.parentElement.nextElementSibling.childNodes[1].disabled=false;
+}
+//next button
+function next(event){
     var x=event.target.parentElement.parentElement.parentElement;
     if(x.id==='q-10'){return;}
     x.style.display='none';
     x.nextElementSibling.style.display='block';
-    
-
 }
 
 //result
@@ -86,6 +84,7 @@ function result(){
     }
     document.getElementById("res").innerHTML='You have scored '+r;
 }
+
 //mark as submitted
 function tick(event){
     event.target.innerHTML=" ✓ submitted";
@@ -98,7 +97,14 @@ function sure(c){
     else{document.getElementsByClassName('modal')[0].style.display='block';}
 
 }
-var mm;
+
+
+
+
+var a=true;
+//time 
+function time(){
+    var mm;
 var ss;
 var m=9;
 var s=59;
@@ -132,11 +138,6 @@ function sec() {
     else{s-=1;}
     document.getElementById("timer").innerHTML=m+":"+s;
 }
-
-
-var a=true;
-//time 
-function time(){
     if(a){
        mm= setInterval(min, 60000);
 
@@ -159,7 +160,7 @@ function time(){
 }
 
 
-//amswers
+//answers
 function answer(){
 var all_ul=document.getElementById('sol').querySelectorAll('ul');
     for (let i = 1; i <= all_ul.length; i++) {
