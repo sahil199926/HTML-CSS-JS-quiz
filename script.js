@@ -176,7 +176,7 @@ var all_ul=document.getElementById('sol').querySelectorAll('ul');
         for (var j = 1; j <= chi.length; j++) {
             if (temp2 == 0) { break;}
             if (j == temp2) {
-             
+                if( chi[j - 1].classList[1]=='list-group-item-dark'){chi[j - 1].style.backgroundColor='#f5c6cb';}
                 chi[j - 1].style.border = '4px solid black';
             }
         }
