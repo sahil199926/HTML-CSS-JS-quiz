@@ -18,7 +18,7 @@
 
 <body  >
 
-  <div id="timer" style="display:none">10:00</div>
+  <div id="timer" style="display:none">09:59</div>
   <div id="index"  class="container" style="text-align: center; " >
   <div class="jumbotron">
     <img src="/quiz.png" /><h1 class="display-4"  style="margin-right: 7%;" >Welcome to HTML, CSS & JS Quiz </h1>
@@ -37,7 +37,7 @@
 
     <br><br>
     <p class="lead">
-      <a id="b1" class="btn btn-primary btn-lg" onclick="func(); time();" type="button" ">Start the quiz</a>
+      <a id="b1" class="btn btn-primary btn-lg" onclick="func(); time();" type="button" ">Start quiz</a>
     </p>
   </div>
   
@@ -50,18 +50,18 @@
     <hr class="my-4">
 
       <form id="qu1" style="font-size: large;">
-        <input type="radio" id="51" name="q1" value="x"/>
+        <input type="radio" id="51" name="q1" value="x" onclick="enable(event);">
         <label for="51">C++</label><br>
-        <input type="radio" id="52" name="q1" value="x"/>
+        <input type="radio" id="52" name="q1" value="x" onclick="enable(event);"/>
         <label for="52">Java</label><br>
-        <input type="radio" id="53" name="q1" value="y"/>
+        <input type="radio" id="53" name="q1" value="y" onclick="enable(event);"/>
         <label for="53">HTML</label><br>
-        <input type="radio" id="54" name="q1" value="x"/>
+        <input type="radio" id="54" name="q1" value="x" onclick="enable(event);"/>
         <label for="54">JVM</label><br>
         </form>
     <p class="lead">
 
-      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event); fo(event);tick(event);">Submit</a>
+      <button id="b2" class="btn btn-primary btn-lg" disabled onclick="next(event); fo(event);tick(event);">next</button>
     </p>
   </div>
 
@@ -74,18 +74,18 @@
     <p class="lead">Choose one</p>
     <hr class="my-4">
 
-      <form id="qu2" style="font-size: large;">
-        <input type="radio" id="61" name="q2" value="x"/>
+      <form id="qu2" style="font-size: large;" >
+        <input type="radio" id="61" name="q2" value="x"  onclick="enable(event);"/>
         <label for="61" >Hyper Text Makeup Language</label><br>
-        <input type="radio" id="62" name="q2" value="y"/>
+        <input type="radio" id="62" name="q2" value="y"  onclick="enable(event);"/>
         <label for="62" >Hyper Text Markup Language</label><br>
-        <input type="radio" id="63" name="q2" value="x"/>
+        <input type="radio" id="63" name="q2" value="x"  onclick="enable(event);"/>
         <label for="63">Hyper Tech Markup Language</label><br>
-        <input type="radio" id="64" name="q2" value="x"/>
+        <input type="radio" id="64" name="q2" value="x"  onclick="enable(event);"/>
         <label for="64"> none of the above</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
+      <button id="b2" disabled class="btn btn-primary btn-lg" onclick="next(event); fo(event);tick(event);">next</button>
     </p>
   </div>
 
@@ -98,17 +98,17 @@
     <p class="lead">Choose one</p>
     <hr class="my-4">
       <form id="qu3" style="font-size: large;">
-        <input type="radio" id="71" name="q3" value="x"/>
+        <input type="radio" id="71" name="q3" value="x"onclick="enable(event);"/>
         <label for="71" >Compiler</label><br>
-        <input type="radio" id="72" name="q3" value="x"/>
+        <input type="radio" id="72" name="q3" value="x"onclick="enable(event);"/>
         <label for="72" >Server</label><br>
-        <input type="radio" id="73" name="q3" value="y"/>
+        <input type="radio" id="73" name="q3" value="y"onclick="enable(event);"/>
         <label for="73"> Web Browser</label><br>
-        <input type="radio" id="74" name="q3" value="x"/>
+        <input type="radio" id="74" name="q3" value="x" onclick="enable(event);"/>
         <label for="74">Interpreter</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"  role="button"  onclick="sub(event);tick(event); fo(event); ">Submit</a>
+      <button id="b2" class="btn btn-primary btn-lg" disabled role="button"  onclick="next(event);tick(event); fo(event); ">next</button>
     </p>
   </div>
 </div>
@@ -124,24 +124,24 @@
       
       </p>
       <form id="qu4" style="font-size: large;">
-        <input type="radio" id="81" name="q4" value="x"/>
+        <input type="radio" id="81" name="q4" value="x"onclick="enable(event);"/>
         <label for="81" >two level</label><br>
-        <input type="radio" id="82" name="q4" value="x"/>
+        <input type="radio" id="82" name="q4" value="x" onclick="enable(event);"/>
         <label for="82" >One level</label><br>
-        <input type="radio" id="83" name="q4" value="x"/>
+        <input type="radio" id="83" name="q4" value="x"onclick="enable(event);"/>
         <label for="83">four level</label><br>
-        <input type="radio" id="84" name="q4" value="y"/>
+        <input type="radio" id="84" name="q4" value="y" onclick="enable(event);"/>
         <label for="84">three level</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
+      <button id="b2" class="btn btn-primary btn-lg"  disabled role="button" onclick="next(event);tick(event); fo(event); ">next</button>
     </p>
   </div>
   
 </div>
 
 <!------>
-<div id="q-5" class="container" style="display: none;" >
+<div id="q-5" class="container" style="display: none;"  >
   <div class="jumbotron">
     <h1 class="display-4">Que 5: An external style sheet is ideal when the style is applied to</h1>
     <p class="lead">Choose one</p>
@@ -151,17 +151,17 @@
       
       </p>
       <form id="qu5" style="font-size: large;">
-        <input type="radio" id="91" name="q5" value="y"/>
+        <input type="radio" id="91" name="q5" value="y"onclick="enable(event);"/>
         <label for="91" >many pages</label><br>
-        <input type="radio" id="92" name="q5" value="x"/>
+        <input type="radio" id="92" name="q5" value="x"onclick="enable(event);"/>
         <label for="92" >few pages</label><br>
-        <input type="radio" id="93" name="q5" value="x"/>
+        <input type="radio" id="93" name="q5" value="x"onclick="enable(event);"/>
         <label for="93">single pages</label><br>
-        <input type="radio" id="94" name="q5" value="x"/>
+        <input type="radio" id="94" name="q5" value="x"onclick="enable(event);"/>
         <label for="94">None of the above</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
+      <button id="b2" class="btn btn-primary btn-lg" disabled   role="button" onclick="next(event);tick(event); fo(event); ">next</button>
     </p>
   </div>
   
@@ -173,18 +173,18 @@
     <h1 class="display-4">Que 6: Which CSS Property is used for controlling the Layout?</h1>
     <p class="lead">Choose one</p>
     <hr class="my-4">
-      <form id="qu6" style="font-size: large;">
-        <input type="radio" id="101" name="q6" value="y"/>
+      <form id="qu6" style="font-size: large;" >
+        <input type="radio" id="101" name="q6" value="y" onclick="enable(event);"/>
         <label for="101" >Display</label><br>
-        <input type="radio" id="102" name="q6" value="x"/>
+        <input type="radio" id="102" name="q6" value="x" onclick="enable(event);"/>
         <label for="102" >Header</label><br>
-        <input type="radio" id="103" name="q6" value="x"/>
+        <input type="radio" id="103" name="q6" value="x" onclick="enable(event);"/>
         <label for="103">Footer</label><br>
-        <input type="radio" id="104" name="q6" value="x"/>
+        <input type="radio" id="104" name="q6" value="x" onclick="enable(event);"/>
         <label for="104"> None Of The Above</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
+      <button id="b2" class="btn btn-primary btn-lg" disabled  role="button" onclick="next(event);tick(event); fo(event); ">next</button>
     </p>
   </div>
 
@@ -198,18 +198,18 @@
     <p class="lead">Choose one</p>
     <hr class="my-4">
 
-      <form id="qu7" style="font-size: large;">
-        <input type="radio" id="111" name="q7" value="x"/>
+      <form id="qu7" style="font-size: large;" >
+        <input type="radio" id="111" name="q7" value="x" onclick="enable(event);"/>
         <label for="111" >Browsers Compatibility</label><br>
-        <input type="radio" id="112" name="q7" value="x"/>
+        <input type="radio" id="112" name="q7" value="x" onclick="enable(event);"/>
         <label for="112" >because JS is client side scripting</label><br>
-        <input type="radio" id="113" name="q7" value="x"/>
+        <input type="radio" id="113" name="q7" value="x" onclick="enable(event);"/>
         <label for="113"> because we can add programming functionality inside JS</label><br>
-        <input type="radio" id="114" name="q7" value="y"/>
+        <input type="radio" id="114" name="q7" value="y" onclick="enable(event);"/>
         <label for="114"> because JS can provide programming functionality inside but up to certain extend.</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
+      <button id="b2" class="btn btn-primary btn-lg" disabled  role="button" onclick="next(event);tick(event); fo(event); ">next</button>
     </p>
   </div>
 
@@ -223,18 +223,18 @@
     <p class="lead">Choose one</p>
     <hr class="my-4">
 
-      <form id="qu8" style="font-size: large;">
-        <input type="radio" id="121" name="q8" value="x"/>
+      <form id="qu8" style="font-size: large;" >
+        <input type="radio" id="121" name="q8" value="x" onclick="enable(event);"/>
         <label for="121" >Server Side Scripting Language</label><br>
-        <input type="radio" id="122" name="q8" value="y"/>
+        <input type="radio" id="122" name="q8" value="y" onclick="enable(event);"/>
         <label for="122" >Client Side Scripting Language</label><br>
-        <input type="radio" id="123" name="q8" value="x"/>
+        <input type="radio" id="123" name="q8" value="x" onclick="enable(event);"/>
         <label for="123"> All of the above</label><br>
-        <input type="radio" id="124" name="q8" value="x"/>
+        <input type="radio" id="124" name="q8" value="x" onclick="enable(event);"/>
         <label for="124">None of the above</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
+      <button id="b2" class="btn btn-primary btn-lg" disabled   role="button" onclick="next(event);tick(event); fo(event); ">next</button>
     </p>
   </div>
 
@@ -249,17 +249,17 @@
     <hr class="my-4">
  
       <form id="qu9" style="font-size: large;">
-        <input type="radio" id="131" name="q9" value="x"/>
+        <input type="radio" id="131" name="q9" value="x" onclick="enable(event);"/>
         <label for="131" >link</label><br>
-        <input type="radio" id="132" name="q9" value="x"/>
+        <input type="radio" id="132" name="q9" value="x" onclick="enable(event);"/>
         <label for="132" >script</label><br>
-        <input type="radio" id="133" name="q9" value="x"/>
+        <input type="radio" id="133" name="q9" value="x" onclick="enable(event);"/>
         <label for="133">ext</label><br>
-        <input type="radio" id="134" name="q9" value="y"/>
+        <input type="radio" id="134" name="q9" value="y" onclick="enable(event);"/>
         <label for="134">src</label><br>
         </form>
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"   role="button" onclick="sub(event);tick(event); fo(event); ">Submit</a>
+      <button id="b2" class="btn btn-primary btn-lg"   role="button" disabled onclick="next(event);tick(event); fo(event); ">next</button>
     </p>
   </div>
   
@@ -272,18 +272,18 @@
     <p class="lead">Choose one</p>
     <hr class="my-4">
       <form id="qu10" style="font-size: large;">
-        <input type="radio" id="141" name="q10" value="x"/>
+        <input type="radio" id="141" name="q10" value="x" onclick="enable(event);"/>
         <label for="141" >Google Chrome</label><br>
-        <input type="radio" id="142" name="q10" value="y"/>
+        <input type="radio" id="142" name="q10" value="y" onclick="enable(event);"/>
         <label for="142" >Netscape</label><br>
-        <input type="radio" id="143" name="q10" value="x"/>
+        <input type="radio" id="143" name="q10" value="x" onclick="enable(event);"/>
         <label for="143">Mozilla Firefox</label><br>
-        <input type="radio" id="144" name="q10" value="x"/>
+        <input type="radio" id="144" name="q10" value="x" onclick="enable(event);"/>
         <label for="144">IE</label><br>
         </form>
       
     <p class="lead">
-      <a id="b2" class="btn btn-primary btn-lg"  role="button" onclick="sub(event);tick(event); show(); ">Submit</a>
+      <button id="b2" class="btn btn-primary btn-lg"  role="button" disabled onclick="next(event);tick(event); show(); ">Submit</button>
       <a class="btn btn-primary btn-lg" id="b3" role="button" style="display: none;"  onclick="sure();">final Submit</a>
     </p>
   </div>
